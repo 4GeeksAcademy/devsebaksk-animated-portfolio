@@ -13,11 +13,11 @@ export const Navbar = () => {
                 initial={{ opacity: 0, scale: 0.5 }} 
                 animate={{ opacity: 1, scale: 1 }} 
                 transition={{ duration: 0.5 }}>
-                    Cleat
+                    Chiki Glam
                 </motion.span>
                 <div className='social'>
-                    <a href=''><i className="fa-brands fa-square-instagram" style={{ color: "#d3d3d3" }}></i></a>
-                    <a href=''><i className="fa-brands fa-square-whatsapp" style={{ color: "#d3d3d3" }}></i></a>
+                    <a href='https://www.instagram.com/chiki.glam/'><i className="fa-brands fa-square-instagram" style={{ color: "white" }}></i></a>
+                    <a href='https://wa.me/+5492995217901'><i className="fa-brands fa-square-whatsapp" style={{ color: "white" }}></i></a>
                 </div>
             </div>
         </div>

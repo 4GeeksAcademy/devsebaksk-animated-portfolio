@@ -1,0 +1,104 @@
+@import "../../app.scss";
+
+.portfolio{
+    position: relative;
+    .progress{
+        position: sticky;
+        top: 0;
+        left: 0;
+        padding-top: 50px;
+        text-align: center;
+        color: #1d2351;
+        font-size: 36px;
+
+        @include mobile{
+            padding-top: calc(100vh - 100px);
+            font-size: 24px;
+        }
+
+
+        .progressBar{
+            height: 10px;
+            background: linear-gradient(-270deg, #FCB7AF, #84e6cd,#fe88da);;
+
+        }
+    }
+
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%; 
+        overflow: hidden;
+
+        .wrapper{
+
+            max-width: 1366px;
+            height: 100%;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            @include mobile{
+                flex-direction: column;
+            }
+
+        .imageContainer{
+            flex: 1;
+            height: 50%;
+
+            @include mobile{
+                width: 100%;
+                max-height: 300px;
+            }
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+
+            @include mobile{
+                object-fit: contain;
+            }
+            
+        }
+    }
+        .textContainer{
+            flex: 1;
+            display: flex ;
+            flex-direction: column;
+            gap: 30px;
+
+            @include mobile{
+                transform: none !important;
+                padding: 10px;
+                align-items: center;
+                text-align: center;
+            }
+
+            h2{
+                font-size: 72px;
+                @include mobile{
+                    font-size: 35px;
+                }
+
+            }
+            p{
+                color: white;
+                font-size: 20px;
+                @include mobile{
+                    font-size: 16px;
+                }
+            }
+            button{
+                background-color: #84e6cd;
+                border: none;
+                padding: 10px;
+                width: 200px;
+                cursor: pointer;
+                border-radius: 10px;
+            }
+        }
+    }
+    }
+}

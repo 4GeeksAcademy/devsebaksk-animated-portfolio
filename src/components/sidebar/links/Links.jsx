@@ -33,7 +33,6 @@ export const Links = () => {
         "Homepage",
         "Services",
         "Portfolio",
-        "About",
         "Contact"
     ];
 
